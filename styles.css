@@ -145,6 +145,48 @@ main {
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
 }
 
+/* =========================
+   Download Recipe Button
+   ========================= */
+
+.download-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 500;
+
+    padding: 0.75rem 1.75rem;
+    border-radius: var(--border-radius-md);
+
+    background-color: var(--color-primary);
+    color: #ffffff;
+    text-decoration: none;
+
+    border: none;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+    box-shadow: var(--shadow-soft);
+}
+
+/* Hover state */
+.download-button:hover {
+    background-color: var(--color-secondary);
+    transform: translateY(-2px);
+}
+
+/* Active / click */
+.download-button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+
 /* ===== Ingredients ===== */
 .ingredients {
     max-width: var(--container);
